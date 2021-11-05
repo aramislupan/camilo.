@@ -1,0 +1,481 @@
+/* general */
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    opacity: 0.9;
+}
+
+h1 {
+    font-size: 3.125rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+h5 {
+    font-size: 0.85rem;
+}
+
+p {
+    font-size: 2.5rem;
+}
+
+.wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header, 
+.footer {
+    background: black;
+}
+
+.content {
+    flex: 1;
+    overflow: auto;
+    background: white;
+}
+
+/* navigation */
+
+nav {
+    height: 4.3125rem;
+}
+
+ul {
+    list-style: none;
+    display: inline-flex;
+    position: fixed;
+    right: 2rem;
+    margin: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    height: 4.375rem;
+  }
+
+ul h4 {
+    padding-left: 1.875rem;
+    margin: 0;
+    color: white;
+    font-weight: 300;
+}
+
+#logo h3{
+    list-style: none;
+    display: inline-flex;
+    position: fixed;
+    left: 2rem;
+    margin: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    height: 4.375rem;
+}
+
+/* cover */
+
+.cover {
+    position: relative;
+    height: 100vh;
+    background-color: black;
+    background-size: cover;
+    text-align:left;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 3rem;
+}
+
+.cover-text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: space-around;
+    flex-direction: column;
+    padding: 5rem;
+}
+
+.cover-text h1 {
+    color:white;
+    margin: 0;
+}
+
+.cover-text h1 span{
+    color:red;
+    margin: 0;
+}
+
+.cover-text h2 {
+    color:white;
+    font-weight: 500;
+    margin: 0;
+}
+
+.cover-text h2 span{
+    color:red;
+    margin: 0;
+}
+
+.cover-text p {
+    color:white;
+    font-weight: 300;
+    margin: 0;
+    padding-top: 1rem;
+}
+
+.cover-text h3 {
+    color: lightgray;
+    font-weight: 600; 
+    margin: 0;
+    padding-bottom: 2rem;
+}
+
+/* skills */
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.row h4 {
+    margin-top: 0.625rem;
+    margin-bottom: 0.625rem;
+    font-weight: 100;
+    margin-bottom: 1.875rem;
+}
+
+.row img {
+    padding: 0;
+    margin-right: 1.875rem;
+    margin-left: 1.875rem;
+}
+
+.col {
+    display: inline-flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.studioThree {
+    background-color: white;
+    border-radius: 50%;
+    color: black;
+    background-size: cover;
+    height: 12.5rem;
+    width: 12.5rem;
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    margin: 0;
+    letter-spacing: 0.125rem;
+}
+
+.runWestminster {
+    background-color: rgb(170, 47, 53);
+    border-radius: 50%;
+    color: white;
+    background-size: cover;
+    height: 12.5rem;
+    width: 12.5rem;
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.mixedMessages {
+    background-color: skyblue;
+    border-radius: 50%;
+    color: white;
+    background-size: cover;
+    height: 12.5rem;
+    width: 12.5rem;
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    margin: 0;
+    letter-spacing: 0.125rem;
+}
+
+/* studio 3 */
+
+.coverStudioThree {
+    background-image: url('resources/154689-cool-coding-background-1920x1280-for-tablet.jpg');
+    position: relative;
+    opacity: 75%;
+    height: 100vh;
+    background-color: black;
+    background-size: cover;
+    text-align:left;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 3rem;
+    mask-image: -webkit-gradient();
+    -webkit-mask-image: linear-gradient(to top, transparent 5%, black 30%);
+}
+
+/* mixed messages */
+
+.coverMixedMessages {
+    background-color: white;
+    height: 100vh;
+    background-size: cover;
+    text-align:left;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 3rem;
+    mask-image: -webkit-gradient();
+    -webkit-mask-image: linear-gradient(to top, transparent 5%, black 30%);
+}
+
+/* run westminster */
+
+.coverRunWestminster {
+    background-image: url('resources/miguel-a-amutio-QDv-uBc-poY-unsplash.jpg');
+    position: relative;
+    opacity: 75%;
+    height: 100vh;
+    background-color: black;
+    background-size: cover;
+    text-align:left;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 3rem;
+    mask-image: -webkit-gradient();
+    -webkit-mask-image: linear-gradient(to bottom, transparent 5%, black 30%); 
+}
+
+/* contact */
+
+#email {
+    text-decoration: none; 
+    color: red;
+}
+
+/* footer */
+
+footer {
+    height: 50px;
+}
+
+footer h5 {
+    padding-left: 20px;
+    margin-top: 15px;
+    font-weight: 100;
+}
+
+
+
+
+@media only screen and (max-width: 480px) {
+
+    h1 {
+        font-size: 1.875rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 0.9rem;
+    }
+
+    h4 {
+        font-size: 0.6rem;
+    }
+
+    h5 {
+        font-size: 0.51rem;
+    }
+
+    p {
+        font-size: 1.25rem;
+    }
+
+    /* navigation */
+
+    ul h4 {
+        padding-left: 1rem;
+        margin: 0;
+        color: white;
+        font-weight: 300;
+    }
+
+    /* cover */
+
+    .cover {
+        position: relative;
+        height: 100vh;
+        background-color: black;
+        background-size: cover;
+        text-align:left;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding: 0rem;
+    }
+
+    .cover-text {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: space-around;
+        flex-direction: column;
+        padding: 3rem;
+    }
+
+    /* skills */
+
+    .studioThree {
+        background-color: white;
+        border-radius: 50%;
+        color: black;
+        background-size: cover;
+        height: 7.5rem;
+        width: 7.5rem;
+        display: inline-flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        margin: 0;
+        letter-spacing: 0.125rem;
+    }
+
+    .runWestminster {
+        background-color: rgb(170, 47, 53);
+        border-radius: 50%;
+        color: white;
+        background-size: cover;
+        height: 7.5rem;
+        width: 7.5rem;
+        display: inline-flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .mixedMessages {
+        background-color: skyblue;
+        border-radius: 50%;
+        color: white;
+        background-size: cover;
+        height: 7.5rem;
+        width: 7.5rem;
+        display: inline-flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        margin: 0;
+        letter-spacing: 0.125rem;
+    }
+
+    /* studio 3 */
+
+    .studioThree {
+        background-color: white;
+        border-radius: 50%;
+        color: black;
+        background-size: cover;
+        height: 7.5rem;
+        width: 7.5rem;
+        display: inline-flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        margin: 0;
+        letter-spacing: 0.125rem;
+    }
+
+    .coverStudioThree {
+        background-image: url('resources/154689-cool-coding-background-1920x1280-for-tablet.jpg');
+        position: relative;
+        opacity: 75%;
+        height: 100vh;
+        background-color: black;
+        background-size: cover;
+        text-align:left;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding: 0rem;
+        mask-image: -webkit-gradient();
+        -webkit-mask-image: linear-gradient(to top, transparent 5%, black 10%);
+    }
+
+    /* mixed messages */
+
+    .coverMixedMessages {
+        background-color: white;
+        height: 100vh;
+        background-size: cover;
+        text-align:left;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding: 0rem;
+        mask-image: -webkit-gradient();
+        -webkit-mask-image: linear-gradient(to top, transparent 5%, black 10%);
+    }
+
+    /* run westminster */
+
+    .coverRunWestminster {
+        background-image: url('resources/miguel-a-amutio-QDv-uBc-poY-unsplash.jpg');
+        position: relative;
+        opacity: 75%;
+        height: 100vh;
+        background-color: black;
+        background-size: cover;
+        text-align:left;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding: 0rem;
+        mask-image: -webkit-gradient();
+        -webkit-mask-image: linear-gradient(to bottom, transparent 5%, black 10%); 
+    }
+
+    /* contact */
+
+    #email {
+        font-size: 1.25rem;
+    }
+
+}
+
